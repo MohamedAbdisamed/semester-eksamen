@@ -1,14 +1,31 @@
 
+/* Sætter hele siden til margin, padding 0 */
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Style for navigation */
-
-a{
-text-decoration: none;
+/* Sætter farven til body */
+body{
+  background: white
 }
+
+/* Sætter farven til body */
+section{
+  position: relative;
+  padding: 100px;
+}
+
+/* header defineres her */
+header{
+  top:0;
+  left: 0;
+  width: 100%;
+
+}
+
+/* Unorded list for navigation defineres her */
 ul {
    list-style-type: none;
    margin: 0;
@@ -38,248 +55,108 @@ ul {
    object-fit: contain;
 }
 
-/* Style for main header */
-
-#main{
-   background-color: whitesmoke;
-   width: 100%;
-   height: 800px;
-}
-
-.model{
-   width:500px;
-   height: 500px;
-}
-
-.content{
-
-   width:90%;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   position: absolute;
-   left: 50%;
-   top:50%;
-   transform: translate(-50%, -50%);
-}
-.main-text{
-   width: 500px;
-}
-
-.main-text h1{
-   font-size: 3.5rem;
-   color:black;
-   margin: 10px;
-   line-height: 60px;
-}
-/* Style for knapperne */
-.btn , .p-box a{
-   width: 190px;
-   height: 44px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: #FFFFFF;
-   background-color: #1db096;
-   border-radius: 20px;
-   border: none;
-   box-shadow: 4px 10px 30px rgb(24,139, 119,0.2);
-}
-
-.btn:hover, .p-box a{
-   background-color: #23cdaf;
-   transition: all ease 0.2s;
-}
-
-/* Her defineres style for skills */
-.skills, #kontakt{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   width: 90%;
-   margin:auto auto 50px auto;
-}
-
-.skills-title, .kontakt-title{
-   width: 400px;
-}
-
-.skills-image, .kontakt-image{
-   width: 600px;
-   height: 600px;
-}
-
-.skills-image img, .kontakt-image img{
-   width: 100%;
-   height: 100%;
-   object-fit: contain;
-}
-
-.skills-heading span{
-   color: #36b7b5;
-   font-weight: 500;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   font-size: 1rem;
-}
-
-.skills-heading h2, .kontakt-heading h2{
-   color: #1c3548;
-   font-size: 2.3rem;
-   font-weight: 400;
-   letter-spacing: 1px;
-}
-
-.skill-box-text strong{
-   color: #1c3548;
-   margin:0;
-   font-size: 0.9rem;
-   font-weight: 600;
-}
-
-.skill-box-text p{
-   color: #747474;
-   font-size: 0.9rem;
-}
-
-/* Portfolio */
-
-#portfolio{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin:30px 0px;
-   flex-direction: column;
-}
-
-.portfolio-heading span, .kontakt-heading span{
-   color: #36b7b5;
-   font-weight: 500;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-}
-
-.portfolio-heading h3, .kontakt-heading h3{
-   color: #1c3548;
-   font-size: 2rem;
-   margin: 0;
-   font-weight: 400;
-   letter-spacing: 2px;
-}
-
-.p-box-container{
- display: flex;
- justify-content: center;
- align-items: center;
- flex-wrap: wrap;
- margin: 20px 0px;
-}
-
-.p-box{
-   width: 310px;
-   height: 350px;
-   background-color: whitesmoke;
-   border-radius: 10px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   padding: 10px;
-   margin:36px;
-   box-shadow: 5px 10px 30px rgba(0,0,0,0.08);
-
-}
-
-.p-box img{
-   width: 100%;
-   height: auto;
-   object-fit: cover;
-}
-
-.p-box strong{
-   color: #1c3548;
-   margin:0;
-   font-size: 1.1rem;
-   font-weight: 600;
-   margin: 10px;
-}
-
-.p-box p{
-   color: #747474;
-   font-size: 0.9rem;
-   margin: 0px;
-   text-align: center;
-   display: block;
-   display: -webkit-box;
-   max-width: 80%;
-   -webkit-line-clamp: 4;
-   -webkit-box-orient: vertical;
-   overflow: hidden;
-   text-overflow: ellipsis;
-   padding: 20px;
-}
-
-.p-box a{
-   width: 140px;
-   margin-top: 20px;
-   border-radius: 0px;
-}
-
-.p-box:hover{
-   transform: translateY(-10px);
-   box-shadow: 5px 10px 30px rgba(0,0,0,0.1);
-   transition: all ease 0.2s;
-}
-
-/* Kontakt formular */
-
-.kontakt-btn{
-  width: 80%;
-  height: 44px;
+/* banner styling defineres her */
+.banner{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background:linear-gradient(to bottom, transparent 0%, black 100%), url(https://source.unsplash.com/OoH3xUh6bkg/);
+  background-size:cover;
+}
+
+.banner .content{
+  position: relative;
+  max-width: 900px;
+  text-align: center;
+  z-index: 1;
+}
+.banner .content{
+  color: white;
+  font-size: 5em;
+}
+.banner .content h2 {
+  color: white;
+  font-size: 20px;
+}
+
+.banner .content p {
+  color: white;
+  font-size: 16px;
+}
+.coverImg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+/* Section om mig derfineres her*/
+.omMig{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.omMig .contentMig{
+  max-width: 50%;
+  width: 50%;
+  text-align: left;
+  padding-right: 40px;
+
+}
+
+/* Disse tittle og bodytxt classer kan genbruges */
+
+/* Knappen defineres her */
+.btn {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 14px;
   color: #FFFFFF;
   background-color: #1db096;
-  border-radius: 20px;
+  border-radius: 5px;
   border: none;
   box-shadow: 4px 10px 30px rgb(24,139, 119,0.2);
 }
 
-.kontakt-form{
-width: 100%;
-height: auto;
-flex: 50%;
-}
-
-.kontakt-form h1{
+.title{
+  font-weight: 600;
+  color: black;
+  font-size: 18px;
   margin-bottom: 10px;
+
 }
 
-
-.form-txt{
-  width:100%;
-  height: 20px;
-  color: black;
-  border:1px solid #bcbcbc;
-  border-radius: 10px;
-  outline: none;
-  margin-bottom: 20px;
-  padding: 15px;
+.bodyTxt{
+  color: grey;
+  font-size: 16px;
 }
 
-.form-txtarea{
-  width:100%;
-  height: 130px;
-  color: black;
-  border:1px solid #bcbcbc;
-  border-radius: 10px;
-  outline: none;
-  margin-bottom: 20px;
-  padding: 15px;
+.omMig .img-box{
+  position: relative;
+  min-width: 50%;
+  width: 50%;
+  min-height: 500px;
 }
 
-/* footer */
+.omMigImg {
+  max-width: 50%;
+  width: 50%;
+  text-align: end;
+}
+
+/* Footer defineres her*/
 footer {
 position: absolute;
 
@@ -336,13 +213,4 @@ position: absolute;
 
 .socials a:hover i {
    color: #36b7b5;
-}
-
-@media(max-width:1140px){
-   .content{width: 100%;}
-   .model{width: 400px; height: 400px;}
-
-   .main-text, .model{
-       margin:10px;
-   }
 }
