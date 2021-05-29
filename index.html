@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <!-- Dette giver browseren instruktioner om, hvordan du styrer sidens dimensioner og skalering. -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Social media icons hentes fra fontawesome  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
         <title> Mohameds Portfolio </title>
@@ -12,10 +14,10 @@
       <header>
           <nav>
           <ul>
-              <li style="float: left;"><a class="active" href="#home">Mohamed</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="OmMig.html">Om Mig</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
+              <li style="float: left; color:#1db096; font-weight:bold; font-size:36px;"><a class="active" href="#home">Mohamed</a></li>
+              <li class="li"><a href="portfolio.html">Portfolio</a></li>
+              <li class="li"><a href="OmMig.html">Om Mig</a></li>
+              <li class="li"><a href="kontakt.html">Kontakt</a></li>
 
           </ul>
           </nav>
@@ -39,8 +41,56 @@
             <a href="#" class="btn">Læs mere</a>
           </div>
           <div class="img-box">
-            <img src="https://source.unsplash.com/OoH3xUh6bkg/"  class="coverImg"/>
+            <img src="/images/mig.png"  class="coverImg"/>
           </div>
+        </section>
+
+        <section id="portfolio">
+         <div class="portfolio-heading">
+             <span>Portfolio</span>
+             <h3> Igangværende projekter </h3>
+         </div>
+         <div class="p-box-container">
+             <div class="p-box">
+                 <img src="https://source.unsplash.com/OoH3xUh6bkg/1920x1080">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam doloribus veritatis dolores, hic perspiciatis perferendis exercitationem voluptates ab tenetur nemo vel excepturi quas dicta, quisquam ea provident veniam voluptatibus!</p>
+                 <a href="#" class="btn">Læs mere</a>
+             </div>
+             <div class="p-box">
+                 <img src="https://source.unsplash.com/OoH3xUh6bkg/1920x1080">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam doloribus veritatis dolores, hic perspiciatis perferendis exercitationem voluptates ab tenetur nemo vel excepturi quas dicta, quisquam ea provident veniam voluptatibus!
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam doloribus veritatis dolores, hic perspiciatis perferendis exercitationem voluptates ab tenetur nemo vel excepturi quas dicta, quisquam ea provident veniam voluptatibus!</p>
+
+                 <a href="#" class="btn">Læs mere</a>
+             </div>
+             <div class="p-box">
+                 <img src="https://source.unsplash.com/OoH3xUh6bkg/1920x1080">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsam doloribus veritatis dolores, hic perspiciatis perferendis exercitationem voluptates ab tenetur nemo vel excepturi quas dicta, quisquam ea provident veniam voluptatibus!</p>
+                 <a href="#" class="btn">Læs mere</a>
+             </div>
+         </div>
+     </section>
+
+     <section id="kontakt">
+          <div class="kontakt-image">
+              <img src="/images/map.jpg"/>
+          </div>
+            <div class="kontakt-title">
+                <div class="kontakt-heading">
+                      <h2 style="margin-bottom: 20px">Kontakt mig</h2>
+                </div>
+                <div class="kontakt-box-container">
+                    <div class="kontakt-box">
+                      <form>
+                        <input type="text" class="form-txt" placeholder="Navn"/>
+                        <input type="text" class="form-txt" placeholder="Email"/>
+                        <textarea placeholder="Besked.." class="form-txtarea" ></textarea>
+                        <input type="submit" class="kontakt-btn" name="submit" />
+                      </form>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <!-- Footer defineres her -->

@@ -1,19 +1,66 @@
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
+    <head>
+      <!-- Dette giver browseren instruktioner om, hvordan du styrer sidens dimensioner og skalering. -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Social media icons hentes fra fontawesome  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title> Mohameds Portfolio </title>
+    </head>
+    <body>
+      <!-- Navigation header defineres her -->
+      <header>
+          <nav>
+          <ul>
+              <li style="float: left; color:#1db096; font-weight:bold; font-size:36px;"><a class="active" href="#home">Mohamed</a></li>
+              <li class="li"><a href="portfolio.html">Portfolio</a></li>
+              <li class="li"><a href="OmMig.html">Om Mig</a></li>
+              <li class="li"><a href="kontakt.html">Kontakt</a></li>
 
-<head>
-  <h1>Kontakt</h1>
-  <meta charset="utf-8">
-  <title>kontakt</title>
-</head>
+          </ul>
+          </nav>
+        </header>
 
-<body>
-  <p>I made this</p>
+    <!-- Banner defineres her -->
+    <section class="banner2">
+      <!--<img src="https://source.unsplash.com/OoH3xUh6bkg/" class="coverImg"/>-->
+    </section>
+     <section id="kontakt">
+          <div class="kontakt-image">
+              <img src="/images/map.jpg"/>
+          </div>
+            <div class="kontakt-title">
+                <div class="kontakt-heading">
+                      <h2 style="margin-bottom: 20px">Kontakt mig</h2>
+                </div>
+                <div class="kontakt-box-container">
+                    <div class="kontakt-box">
+                      <form>
+                        <input type="text" class="form-txt" placeholder="Navn"/>
+                        <input type="text" class="form-txt" placeholder="Email"/>
+                        <textarea placeholder="Besked.." class="form-txtarea" ></textarea>
+                        <input type="submit" class="kontakt-btn" name="submit" />
+                      </form>
+                    </div>
+                </div>
+            </div>
 
-  <footer>
-    <p>halla</p>
-  </footer>
+        </section>
 
-</body>
-
+        <!-- Footer defineres her -->
+        <footer>
+           <div class="footer-content">
+               <h3>Mohamed abdisamed</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis quam eaque fugit corrupti corporis consequuntur. Ratione, repellendus, maiores ipsum magnam obcaecati blanditiis quasi aperiam facilis, hic deserunt dicta soluta?</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            </ul>
+            </div>
+        </footer>
+    </body>
 </html>
