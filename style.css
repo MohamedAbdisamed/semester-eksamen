@@ -126,6 +126,13 @@ ul {
 }
 
 /* Section om mig derfineres her*/
+#omMig{
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .omMig{
   position: relative;
   width: 100%;
@@ -160,6 +167,26 @@ ul {
   text-align: center
 }
 
+.btnPortfolio{
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #1db096;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 4px 10px 30px rgb(24,139, 119,0.2);
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 .title{
   font-weight: 600;
   color: black;
@@ -192,15 +219,87 @@ opacity: 1;
 
 
 /*Portfolio */
-
-#portfolio{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin:0px 0px;
-   flex-direction: column;
+.container {
+  display: flex;
 }
 
+.section {
+  flex: 1; /*grow*/
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) { /*breakpoint*/
+  .container {
+    flex-direction: column;
+  }
+  .section{
+    margin-bottom: 60px;
+  }
+  .imgSection, .imgSection3 {
+    width: auto !important;
+  }
+
+  .omMigImg img{
+    margin-top: 220px;
+  }
+
+.omMigFooter{
+  margin-top: 250px;
+}
+  .projektImg img{
+    margin-top: 200px;
+    height: auto;
+  }
+  .projektFooter{
+    margin-top: 800px;
+  }
+
+  .projektFooter2{
+    margin-top: 1300px;
+  }
+}
+
+.imgSection, .imgSection3 {
+  width: 300px;
+  height: 400px;
+  background: #000;
+  background-position: top;
+  transition: ease-in-out 8s;
+}
+
+.imgSection2 {
+  width: 300px;
+  height: 400px;
+  background: #000;
+}
+
+.imgSection {
+  background:url(/images/projekt1/web1.png);
+  background-size: cover;
+
+}
+
+.imgSection2 {
+  background:url(/images/projekt2/folder.jpg);
+  background-size: cover;
+
+}
+
+.imgSection3 {
+  background:url(/images/portfolioxd/front.xd.png);
+  background-size: cover;
+
+}
+
+.imgSection:hover, .imgSection3:hover {
+  background-position: bottom;
+}
+.title2{
+  text-align:center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
 .portfolio-heading{margin-bottom: 20px}
 .portfolio-heading span, .kontakt-heading span{
    color: #36b7b5;
@@ -281,11 +380,11 @@ opacity: 1;
 /* Kontkat section defineres her*/
 
 #kontakt{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   width: 90%;
-   margin:auto auto 50px auto;
+  display: flex;
+}
+
+.sectionKontakt{
+  flex: 1;
 }
 .kontakt-title{
    width: 400px;
@@ -303,7 +402,7 @@ opacity: 1;
 }
 
 .kontakt-btn{
-  width: 80%;
+  width: 100%;
   height: 44px;
   display: flex;
   justify-content: center;
