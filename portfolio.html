@@ -1,16 +1,71 @@
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
+    <head>
+      <!-- Dette giver browseren instruktioner om, hvordan du styrer sidens dimensioner og skalering. -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Social media icons hentes fra fontawesome  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title> Mohameds Portfolio </title>
+    </head>
+    <body>
+      <!-- Navigation header defineres her -->
+      <header>
+          <nav>
+          <ul>
+              <li class="logoLi"><a class="active" href="index.html">Mohamed</a></li>
+              <li class="li"><a href="portfolio.html">Portfolio</a></li>
+              <li class="li"><a href="OmMig.html">Om Mig</a></li>
+              <li class="li"><a href="kontakt.html">Kontakt</a></li>
 
-<head>
-  <h1>portfolio</h1>
-  <meta charset="utf-8">
-  <title>portfolio</title>
-</head>
+          </ul>
+          </nav>
+        </header>
 
-<body>
-  <footer>
-    <p>halla</p>
-  </footer>
-</body>
+                <section id="portfolio">
+                 <div class="portfolio-heading">
+                     <span>Portfolio</span>
+                     <h3> Igangværende projekter </h3>
+                 </div>
+                 <div class="p-box-container">
+                     <div class="p-box">
+                         <img src="/images/projekt1/web1.png" >
+                         <p>Her har jeg lavet en lille webshop design i XD. Der vil blive opbygget en hjemmeside efter den model også vil siden også komme op her så man kan se både før og efter processen</p>
+                         <a href="projekt1.html" class="btn">Læs mere</a>
+                     </div>
+                     <div class="p-box">
+                         <img src="/images/portfolioxd/front.xd.png">
+                         <p>
+                           Her har vi et eksempel på hvordan et portfolio kan se ud. Det er en XD design, der blot mangler at blive kodet sammen så er den klar til brug!
+                         </p>
+                         <a href="projekt2.html" class="btn">Læs mere</a>
+                     </div>
+                     <div class="p-box">
+                         <img src="images/projekt2/folder.jpg">
+                         <p>
+                           Dette var et installations projekt vi lavede i gruppe, vores hold kom frem til en ide vi kalder kunst i mørke, hvor formålet er at opleve kunst med dine andre sanser
+                         </p>
+                         <a href="projekt3.html" class="btn">Læs mere</a>
+                     </div>
+                 </div>
+             </section>
 
+        <!-- Footer defineres her -->
+        <footer>
+           <div class="footer-content">
+             <h3>Mohamed abdisamed</h3>
+             <p>
+               Jeg hedder Mohamed, jeg 33 år og er ved at uddanne mig som multimediedesigner.
+               <br/>Jeg har under dette semester lært rigtig mange ting og jeg har været med til at lave nogle projekter som har været ret spændene og lærerigt.
+             </p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            </ul>
+            </div>
+        </footer>
+    </body>
 </html>

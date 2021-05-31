@@ -47,7 +47,7 @@ ul {
  }
 
  li a:hover {
-   background-color: #111;
+   background-color: #1db096;
  }
 
 .model img{
@@ -62,6 +62,11 @@ ul {
   text-transform: uppercase;
 }
 
+.logoLi{
+  float:left;
+   font-weight:bold;
+   font-size:36px;
+}
 
 /* banner styling defineres her */
 .banner{
@@ -86,24 +91,28 @@ ul {
   background-size:cover;
 }
 
-.banner .content{
+.banner .content, .banner2 .content{
   position: relative;
-  max-width: 900px;
+  max-width: 100%;
   text-align: center;
   z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 20px;
 }
-.banner .content{
+.banner .content, .banner2 .content{
   color: white;
   font-size: 5em;
 }
-.banner .content h2 {
+.banner .content h1, .banner2 .content h1{
   color: white;
-  font-size: 20px;
+  font-size: 42px;
+  padding-bottom: 20px;
 }
 
 .banner .content p {
   color: white;
-  font-size: 16px;
+  font-size: 18px;
 }
 .coverImg{
   position: absolute;
@@ -171,6 +180,10 @@ ul {
   min-height: 500px;
 }
 
+.img-box:hover img{
+opacity: 1;
+}
+
 .omMigImg {
   max-width: 50%;
   width: 50%;
@@ -188,6 +201,7 @@ ul {
    flex-direction: column;
 }
 
+.portfolio-heading{margin-bottom: 20px}
 .portfolio-heading span, .kontakt-heading span{
    color: #36b7b5;
    font-weight: 500;
@@ -221,15 +235,16 @@ ul {
    align-items: center;
    flex-direction: column;
    padding: 10px;
-   margin:36px;
+   margin:66px;
    box-shadow: 5px 10px 30px rgba(0,0,0,0.08);
 
 }
 
 .p-box img{
    width: 100%;
-   height: auto;
+   height: 300px;
    object-fit: cover;
+
 }
 
 .p-box strong{
@@ -248,10 +263,6 @@ ul {
    display: block;
    display: -webkit-box;
    max-width: 80%;
-   -webkit-line-clamp: 4;
-   -webkit-box-orient: vertical;
-   overflow: hidden;
-   text-overflow: ellipsis;
    padding: 20px;
 }
 
@@ -299,7 +310,7 @@ ul {
   align-items: center;
   color: #FFFFFF;
   background-color: #1db096;
-  border-radius: 20px;
+  border-radius: 2px;
   border: none;
   box-shadow: 4px 10px 30px rgb(24,139, 119,0.2);
 }
@@ -320,7 +331,7 @@ flex: 50%;
   height: 20px;
   color: black;
   border:1px solid #bcbcbc;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: none;
   margin-bottom: 20px;
   padding: 15px;
@@ -331,7 +342,7 @@ flex: 50%;
   height: 130px;
   color: black;
   border:1px solid #bcbcbc;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: none;
   margin-bottom: 20px;
   padding: 15px;
@@ -417,6 +428,8 @@ position: absolute;
   .img-box{
     margin-top:-160px;
   }
+
+
   .omMig .contentMig, .omMig .img-box{
     min-width: 100%;
     width: 100%;
