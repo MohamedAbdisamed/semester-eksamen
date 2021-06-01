@@ -62,7 +62,7 @@ ul {
   text-transform: uppercase;
 }
 
-.logoLi{
+#logoLi{
   float:left;
    font-weight:bold;
    font-size:36px;
@@ -118,7 +118,7 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
