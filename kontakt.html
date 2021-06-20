@@ -1,58 +1,73 @@
-
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="da" xml:lang="da">
     <head>
-      <!-- charset og encoding for at fjerne å ø æ problemet-->
+      <!-- charset og encoding for at den kan læse å ø æ -->
       <meta charset="utf-8" />
-      <!-- Dette giver browseren instruktioner om, hvordan du styrer sidens dimensioner og skalering. -->
+      <!-- Dette giver browseren instruktioner om, hvordan jeg styrer sidens dimensioner og skalering. -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Social media icons hentes fra fontawesome  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Eksternal css fil kaldes her -->
         <link rel="stylesheet" href="style.css">
+        <!-- angiver title for HTML siden som visses I browser bar. -->
         <title> Mohameds Portfolio </title>
     </head>
     <body>
-      <!-- Navigation header defineres her -->
+      <!-- Header defineres her med nav  -->
       <header>
           <nav>
+            <!-- Her defineres nav logo, og en checkbox input til at vise og skjule header -->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fa fa-bars"></i>
+            </label>
+            <span class="logo" ><a href="index.html" > Mohamed </a></span>
+          <!--Unordered list og dens list items -->
           <ul>
-              <li id="logoLi"><a class="active" href="index.html">Mohamed</a></li>
-              <li class="li"><a href="portfolio.html">Portfolio</a></li>
-              <li class="li"><a href="OmMig.html">Om Mig</a></li>
-              <li class="li"><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="portfolio.html" >Portfolio</a></li>
+            <li><a href="OmMig.html">Om Mig</a></li>
+            <li ><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="https://blog.abdisamed.dk/">Blog</a></li>
 
           </ul>
           </nav>
         </header>
-<!-- kontakt -->
-        <section>
-          <h2 class="title2">Kontakt mig</h2>
-          <div class="kontakt-box-container">
-              <div class="kontakt-box">
-                <form>
-                  <input type="text" class="form-txt" placeholder="Navn"/>
-                  <input type="text" class="form-txt" placeholder="Email"/>
-                  <textarea placeholder="Besked.." class="form-txtarea" ></textarea>
-                  <input type="submit" class="kontakt-btn" name="submit" />
-                </form>
+        <!-- Banner defineres her -->
+        <section class="banner2">
+        </section>
+
+        <!-- Kontakt mig section defineres her -->
+        <section class="kontaktPage">
+           <h2 class="title2">Kontakt mig</h2>
+             <hr class="hr">
+          <div class="wrapper">
+            <div class="card">
+              <div class="card-body">
+                    <i class="fa fa-phone"></i>
+                    <h2>Mobil nr: </h2>
+                    <span> +45 71 87 77 47</span>
               </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                  <i class="fa fa-envelope"></i>
+                    <h2><a href="https://blog.abdisamed.dk/kontakt/" style="color:white;"> Email </a></h2>
+                    <span> Abdisamed@hotmail.dk</span>
+              </div>
+            </div>
+
           </div>
-           </section>
+        </section>
+
         <!-- Footer defineres her -->
         <footer>
            <div class="footer-content">
-             <h3>Mohamed abdisamed</h3>
-             <p>
-              Mobil: +45 71 87 77 47 <br/>
-              Email: Abdisamed@hotmail.dk
-
-             </p>
-               <ul class="socials">
-                <li><a href="https://www.facebook.com/Mohamed.Abdisamed"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/CryptoloverDK"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://dk.linkedin.com/in/mohamed-abdisamed-97496982"><i class="fa fa-linkedin-square"></i></a></li>
-                <li><a href="https://github.com/MohamedAbdisamed"><i class="fa fa-github"></i></a></li>
-            </ul>
+              <ul class="socials">
+                  <li><a href="https://www.facebook.com/Mohamed.Abdisamed"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://twitter.com/CryptoloverDK"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://dk.linkedin.com/in/mohamed-abdisamed-97496982"><i class="fa fa-linkedin-square"></i></a></li>
+                  <li><a href="https://github.com/MohamedAbdisamed"><i class="fa fa-github"></i></a></li>
+              </ul>
             </div>
         </footer>
     </body>

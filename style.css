@@ -1,71 +1,108 @@
 
-/* Sætter hele siden til margin, padding 0 */
+/* Universal selector *{} */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-/* Sætter farven til body */
+/* Select body elementet   */
 body{
-  background: white
+  font-family:montserrat;
+
 }
 
-/* Sætter farven til body */
+a{
+  text-decoration: none;
+
+}
 section{
   position: relative;
-  padding: 100px;
+  padding: 150px;
 }
 
-/* header defineres her */
-header{
-  top:0;
-  left: 0;
+nav{
+  background: black;
+  height: 110px;
   width: 100%;
+  border-bottom: 1px solid grey;
+}
+
+span.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 100px;
+  padding: 0 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+span.logo a{
+  color: white;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
 
 }
 
-/* Unorded list for navigation defineres her */
-ul {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-   overflow: hidden;
-   background-color: #333;
- }
+nav ul li{
+  display: inline-block;
+  line-height: 100px;
+  margin-left: 0 50px;
+}
 
- li {
-   float: right;
- }
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  padding:7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
- li a {
-   display: block;
+.logo a:hover{
+  background:white;
+  padding:5px 10px;
+  color:black;
+  border-radius: 3px;
+}
+
+ a:hover{
+  background:white;
+  transition: .1s;
+  color:black;
+}
+
+/* input tag for checkbox som viser og skjuler navigationen */
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+ .text-center{
    color: white;
    text-align: center;
-   padding: 14px 16px;
-   text-decoration: none;
+   padding-bottom: 20px
  }
 
- li a:hover {
-   background-color: #1db096;
- }
-
+/* Select */
 .model img{
    width:100%;
    height: 100%;
    object-fit: contain;
-}
-
-.li{
-  padding-top: 10px;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-#logoLi{
-  float:left;
-   font-weight:bold;
-   font-size:36px;
 }
 
 /* banner styling defineres her */
@@ -76,12 +113,16 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:linear-gradient(to bottom, transparent 0%, black 100%), url(https://source.unsplash.com/OoH3xUh6bkg/1920x1080);
+  background:linear-gradient(to bottom, transparent -80%, black 100%),
+   url(https://source.unsplash.com/zv5QSKaP8G8/1920x1080 );
   background-size:cover;
 }
 
+/*banner 2 er for Ommig siden og kontakt siden*/
 .banner2{
+
   position: relative;
+  margin:0;
   width: 100%;
   min-height: 30vh;
   display: flex;
@@ -90,20 +131,19 @@ ul {
   background:linear-gradient(to bottom, transparent 0%, black 100%), url(https://source.unsplash.com/OoH3xUh6bkg/1920x1080);
   background-size:cover;
 }
-
+/* Grouping selector  */
 .banner .content, .banner2 .content{
   position: relative;
   max-width: 100%;
   text-align: center;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  font-weight: 24px;
+  line-height: 1.5;
+  letter-spacing: 1;
   padding: 20px;
-}
-.banner .content, .banner2 .content{
   color: white;
   font-size: 5em;
 }
+/* Grouping selector  */
 .banner .content h1, .banner2 .content h1{
   color: white;
   font-size: 42px;
@@ -118,7 +158,6 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
@@ -126,78 +165,34 @@ ul {
 }
 
 /* Section om mig derfineres her*/
-#omMig{
-  width: 90%;
-  display: flex;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 .omMig{
   position: relative;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  width: 80%
 }
 
 .omMig .contentMig{
-  max-width: 50%;
-  width: 50%;
+  max-width: 100%;
   text-align: left;
   padding-right: 40px;
 
 }
 
-/* Disse tittle og bodytxt classer kan genbruges */
-
-/* Knappen defineres her */
-.btn {
-  position: relative;
-  display: inline-block;
-  margin-top: 30px;
-  padding: 10px 30px;
-  text-decoration: none;
-  font-size: 14px;
-  color: #FFFFFF;
-  background-color: #1db096;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 4px 10px 30px rgb(24,139, 119,0.2);
-  text-align: center
-}
-
-.btnPortfolio{
-  position: relative;
-  display: inline-block;
-  margin-top: 30px;
-  padding: 10px 30px;
-  text-decoration: none;
-  font-size: 14px;
-  color: #FFFFFF;
-  background-color: #1db096;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 4px 10px 30px rgb(24,139, 119,0.2);
-  text-align: center;
-  display: flex;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.title{
+.omMig .title{
   font-weight: 600;
   color: black;
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 10px;
 
 }
-
-.bodyTxt{
-  color: grey;
-  font-size: 16px;
+.omMig .hr{
+  border:2px solid #1db096;
+  width:60px;
+  margin-bottom: 20px;
 }
 
 .omMig .img-box{
@@ -205,6 +200,12 @@ ul {
   min-width: 50%;
   width: 50%;
   min-height: 500px;
+}
+
+.migImage {
+  background:url(/images/projekt3.png);
+  background-size: cover;
+
 }
 
 .img-box:hover img{
@@ -218,6 +219,149 @@ opacity: 1;
 }
 
 
+/* Knappen defineres her */
+.btn {
+  width: 200px;
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #1db096;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 4px 10px 30px rgb(24,139, 119,0.2);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title{
+  font-weight: 600;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 10px;
+
+}
+
+.bodyTxt{
+  color: grey;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Kompetenc section definees her */
+.kompetencer{
+  background:linear-gradient(to bottom, transparent -90%, black 100%),
+   url(https://source.unsplash.com/zv5QSKaP8G8/1920x1080 );
+  background-size:cover;
+}
+.kompetencer .hr{
+  border:2px solid #1db096;
+  width:100px;
+  margin:auto;
+  margin-top: -30px;
+  margin-bottom: 40px;
+
+}
+
+.kompetencer a:hover{
+  background: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Kontakt defineres her */
+.kontaktPage{
+  background:white;
+}
+
+.kontakt{
+  background:linear-gradient(to bottom, transparent -90%, black 100%),
+   url(https://source.unsplash.com/zv5QSKaP8G8/1920x1080 );
+  background-size:cover;
+}
+.kontakt .hr, .portfolio .hr, .kontaktPage .hr{
+  border:2px solid #1db096;
+  width:100px;
+  margin:auto;
+  margin-top: -30px;
+  margin-bottom: 40px;
+
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 50px;
+  margin-top: 40px;
+}
+
+/* Style for card class defineres her */
+.card{
+  /* Grid defineres her og dens column og rows sættes til 300px og 100px*/
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows:  100px;
+  grid-template-areas: "body";
+  border-radius: 18px;
+  background: white;
+  border: 1px solid white;
+  text-align: center;
+
+}
+
+
+.card-mig{
+  /* Grid defineres her og dens column og rows sættes til 300px og 100px*/
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows:  200px;
+  background: white;
+  text-align: center;
+
+}
+
+.card-portfolio{
+  /* Grid defineres her og dens column og rows sættes til 300px og 100px*/
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows:  auto;
+  grid-template-areas: "body";
+  border-radius: 18px;
+  background: white;
+  text-align: center;
+
+}
+
+.card-body{
+  grid-area: body;
+  padding: 20px;
+  background: black;
+}
+
+.card-body-portfolio{
+  grid-area: body;
+  padding: 20px;
+  background: white;
+  border:1px solid grey;
+}
+
+.kompetencer .card:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6)
+}
+
+/* Grouping selector: fordi icon, h2 og span skal have det samme style*/
+.card i, h2, span {
+  color:white;
+}
+
 /*Portfolio */
 .container {
   display: flex;
@@ -228,229 +372,9 @@ opacity: 1;
   margin-left: 30px;
 }
 
-@media (max-width: 768px) { /*breakpoint*/
-  .container {
-    flex-direction: column;
-  }
-  .section{
-    margin-bottom: 60px;
-  }
-  .imgSection, .imgSection3 {
-    width: auto !important;
-  }
-
-  .omMigImg img{
-    margin-top: 220px;
-  }
-
-.omMigFooter{
-  margin-top: 250px;
-}
-  .projektImg img{
-    margin-top: 200px;
-    height: auto;
-  }
-  .projektFooter{
-    margin-top: 800px;
-  }
-
-  .projektFooter2{
-    margin-top: 1300px;
-  }
-}
-
-.imgSection, .imgSection3 {
-  width: 300px;
-  height: 400px;
-  background: #000;
-  background-position: top;
-  transition: ease-in-out 8s;
-}
-
-.imgSection2 {
-  width: 300px;
-  height: 400px;
-  background: #000;
-}
-
-.imgSection {
-  background:url(/images/projekt1/Web1.png);
-  background-size: cover;
-
-}
-
-.imgSection2 {
-  background:url(/images/projekt2/folder.jpg);
-  background-size: cover;
-
-}
-
-.imgSection3 {
-  background:url(/images/portfolioxd/front.xd.png);
-  background-size: cover;
-
-}
-
-.imgSection:hover, .imgSection3:hover {
-  background-position: bottom;
-}
-.title2{
-  text-align:center;
-  font-size: 36px;
-  font-weight: 600;
-  margin-bottom: 50px;
-}
-.portfolio-heading{margin-bottom: 20px}
-.portfolio-heading span, .kontakt-heading span{
-   color: #36b7b5;
-   font-weight: 500;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-}
-
-.portfolio-heading h3, .kontakt-heading h3{
-   color: #1c3548;
-   font-size: 2rem;
-   margin: 0;
-   font-weight: 400;
-   letter-spacing: 2px;
-}
-
-.p-box-container{
- display: flex;
- justify-content: center;
- align-items: center;
- flex-wrap: wrap;
- margin: 20px 0px;
-}
-
-.p-box{
-   width: 310px;
-   height: 350px;
-   background-color: whitesmoke;
-   border-radius: 10px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   padding: 10px;
-   margin:66px;
-   box-shadow: 5px 10px 30px rgba(0,0,0,0.08);
-
-}
-
-.p-box img{
-   width: 100%;
-   height: 300px;
-   object-fit: cover;
-
-}
-
-.p-box strong{
-   color: #1c3548;
-   margin:0;
-   font-size: 1.1rem;
-   font-weight: 600;
-   margin: 10px;
-}
-
-.p-box p{
-   color: #747474;
-   font-size: 0.9rem;
-   margin: 0px;
-   text-align: center;
-   display: block;
-   display: -webkit-box;
-   max-width: 80%;
-   padding: 20px;
-}
-
-.p-box a{
-   width: 140px;
-   margin-top: 20px;
-   border-radius: 0px;
-}
-
-.p-box:hover{
-   transform: translateY(-10px);
-   box-shadow: 5px 10px 30px rgba(0,0,0,0.1);
-   transition: all ease 0.2s;
-}
-
-/* Kontkat section defineres her*/
-
-#kontakt{
-  display: flex;
-}
-
-.sectionKontakt{
-  flex: 1;
-}
-.kontakt-title{
-   width: 400px;
-}
-
- .kontakt-image{
-   width: 600px;
-   height: 600px;
-}
-
-.skills-image img, .kontakt-image img{
-   width: 100%;
-   height: 100%;
-   object-fit: contain;
-}
-
-.kontakt-btn{
-  width: 100%;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FFFFFF;
-  background-color: #1db096;
-  border-radius: 2px;
-  border: none;
-  box-shadow: 4px 10px 30px rgb(24,139, 119,0.2);
-}
-
-.kontakt-form{
-width: 100%;
-height: auto;
-flex: 50%;
-}
-
-.kontakt-form h1{
-  margin-bottom: 10px;
-}
-
-
-.form-txt{
-  width:100%;
-  height: 20px;
-  color: black;
-  border:1px solid #bcbcbc;
-  border-radius: 5px;
-  outline: none;
-  margin-bottom: 20px;
-  padding: 15px;
-}
-
-.form-txtarea{
-  width:100%;
-  height: 130px;
-  color: black;
-  border:1px solid #bcbcbc;
-  border-radius: 5px;
-  outline: none;
-  margin-bottom: 20px;
-  padding: 15px;
-}
-
 /* Footer defineres her*/
 footer {
 position: absolute;
-
  background:#111;
  height: auto;
  width: 100vw;
@@ -488,6 +412,8 @@ position: absolute;
 
 }
 
+
+
 .socials li{
    margin:0px 10px;
 }
@@ -506,8 +432,110 @@ position: absolute;
    color: #36b7b5;
 }
 
+.projectImg1, .projectImg2, .projectImg3 {
+  width: 300px;
+  height: 400px;
+}
+
+.projectImg1 {
+  background:url(/images/Klientrapport.jpeg);
+  background-size: cover;
+
+}
+
+.projectImg2 {
+  background:url(/images/projekt2/folder.jpg);
+  background-size: cover;
+
+}
+
+.projectImg3 {
+  background:url(/images/projekt3.png);
+  background-size: cover;
+
+}
+
+
+
+.projectImg1:hover, .projectImg2:hover, .projectImg3:hover {
+  transform: scale(1.1);
+}
+
+.title2{
+ text-align:center;
+ font-size: 36px;
+ font-weight: 600;
+ margin-bottom: 50px;
+ color: black;
+}
+
+.kontakt-heading span{
+   color: #36b7b5;
+   font-weight: 500;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+.kontakt-heading h3{
+   color: #1c3548;
+   font-size: 2rem;
+   margin: 0;
+   font-weight: 400;
+   letter-spacing: 2px;
+}
+
+
+.btnPortfolio{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #1db096;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 4px 10px 30px rgb(24,139, 119,0.2);
+  text-align: center;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btnBlog{
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #1db096;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 4px 10px 30px rgb(24,139, 119,0.2);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  margin:0 auto;
+  width: 50%;
+}
+
+.cWhite{
+  color:white;
+}
+
+.txt{
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 /* Media queries defineres her */
+
 
 @media (max-width: 767px){
   section{
@@ -549,16 +577,113 @@ position: absolute;
     padding:50px;
   }
 
-.portfolio-heading{
-    margin-bottom: 48px;
-}
-.p-box{
-  margin-bottom: 84px;
+  .container {
+    flex-direction: column;
+  }
+  .section{
+    margin-bottom: 60px;
+  }
+
+  .coverImg{
+    width: 100%;
+
+  }
+
+  .omMigImg img{
+    margin-top: 220px;
+  }
+
+.marginTop250{
+  margin-top: 250px;
 }
 
-.p-box p {
-    overflow: visible;
-    text-overflow: clip;
-    margin-bottom: 70px;
+}
+
+/*Media queries */
+@media (max-width: 952px) {
+
+  span.logo{
+    font-size: 30px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+
+
+  .checkbtn{
+    display: block;
+  }
+
+  ul{
+    width: 100%;
+    top:80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul{
+      background: black;
+      margin: 0;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 10px;
+
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    height: 20px;
+
+  }
+  .omMig .hr, .portfolio{
+    margin: auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+  }
+
+/* Kontakt section wrapper*/
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+  }
+
+  .card{
+    width: 100%;
+    background: black;
+    text-align: center;
+    justify-content: center;
+
+  }
+  .card-body-portfolio{
+  width:400px;
+  height: auto;
+  }
+
+  .projectImg1, .projectImg2, .projectImg3{
+    width: 100%;
+    height: 500px;
+  }
+
+  .card-header{
+    width: 100%;
+    width: auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .card:hover{
+    transform: scale(1.0);
+  }
 
 }
