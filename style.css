@@ -320,6 +320,8 @@ opacity: 1;
 }
 
 
+
+
 .card-mig{
   /* Grid defineres her og dens column og rows sættes til 300px og 100px*/
   display: grid;
@@ -342,14 +344,31 @@ opacity: 1;
 
 }
 
+.card-portfolio2{
+  /* Grid defineres her og dens column og rows sættes til 300px og 100px*/
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows:  auto;
+  grid-template-areas: "body";
+  grid-row-gap: 50px;
+  grid-column-gap: 90px;
+  border-radius: 18px;
+  background: white;
+  border: 1px solid white;
+  text-align: center;
+
+}
+
 .card-body{
   grid-area: body;
   padding: 20px;
   background: black;
+
 }
 
 .card-body-portfolio{
   grid-area: body;
+  margin-top: 30px;
   padding: 20px;
   background: white;
   border:1px solid grey;
@@ -376,6 +395,14 @@ opacity: 1;
 .section {
   flex: 1; /*grow*/
   margin-left: 30px;
+}
+
+.marginTop{
+  margin-top:-190px
+}
+
+.marginTop2{
+  margin-top:-550px
 }
 
 /* Footer defineres her*/
@@ -421,7 +448,7 @@ position: absolute;
 
 
 .socials li{
-   margin:0px 10px;
+   margin:0px 30px;
 }
 
 .socials a{
@@ -430,25 +457,43 @@ position: absolute;
 }
 
 .socials a i{
-   font-size: 1.1rem;
+   font-size: 30px;
    transition: color .4s ease;
 }
 
 .socials a:hover i {
+
    color: #36b7b5;
 }
 
-.projectImg1, .projectImg2, .projectImg3 {
+.projectImg1, .projectImg2, .projectImg3
+  {
   width: 300px;
   height: 400px;
 }
+.imgSize img {
+  width: 300px;
+  height: 400px;
+}
+.imgSize2 img {
+  width: 100%;
+  height: auto;
+}
 
+.imgSize2 img:hover {
+   transform: scale(1.1);
+}
 .projectImg1 {
   background:url(/images/Klientrapport.jpeg);
   background-size: cover;
 
 }
 
+.xdportfolio
+{
+  background:url(/images/web1.png);
+  background-size: cover;
+}
 .projectImg2 {
   background:url(/images/projekt2/folder.jpg);
   background-size: cover;
@@ -468,6 +513,7 @@ position: absolute;
 }
 
 .title2{
+
  text-align:center;
  font-size: 36px;
  font-weight: 600;
@@ -604,6 +650,22 @@ position: absolute;
   margin-top: 250px;
 }
 
+.mbottom{
+  margin-bottom: 140px;
+}
+
+.mtop{
+  margin-top: -20px;
+}
+
+.marginTop{
+  margin-top:0px;
+}
+
+.marginTop2{
+  margin-top:0px
+}
+
 }
 
 /*Media queries */
@@ -691,6 +753,22 @@ position: absolute;
 
   .card:hover{
     transform: scale(1.0);
+  }
+
+  .mbottom{
+    margin-bottom: -50px;
+  }
+
+  .mtop{
+    margin-top: -20px;
+  }
+
+  .marginTop{
+    margin-top:0px;
+  }
+
+  .marginTop2{
+    margin-top:0px
   }
 
 }

@@ -1,155 +1,163 @@
 <!DOCTYPE html>
 <html lang="da">
-    <head>
 
-      <!-- charset og encoding for at den kan læse å ø æ -->
-      <meta charset="utf-8" />
+<head>
 
-      <!-- Dette giver browseren instruktioner om, hvordan jeg styrer sidens dimensioner og skalering. -->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- charset og encoding for at den kan læse å ø æ -->
+  <meta charset="utf-8" />
 
-      <!-- Social media icons hentes fra fontawesome  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Dette giver browseren instruktioner om, hvordan jeg styrer sidens dimensioner og skalering. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Eksternal css fil kaldes her -->
-        <link rel="stylesheet" href="style.css">
+  <!-- Social media icons hentes fra fontawesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- angiver title for HTML siden som visses I browser bar. -->
-        <title> Mohameds Portfolio </title>
-    </head>
-    <body>
+  <!-- Eksternal css fil kaldes her -->
+  <link rel="stylesheet" href="style.css">
 
-      <!-- Header defineres her med nav  -->
-      <header>
-          <nav >
-              <!-- Her defineres nav logo, og en checkbox input til at vise og skjule header -->
-              <!-- input defineres med type checkbox, hvis checkbox er tjekket skjules ellers visses den -->
-              <input type="checkbox" id="check">
-              <label for="check" class="checkbtn">
-                <i class="fa fa-bars"></i>
-              </label>
-              <span class="logo" ><a href="index.html"> Mohamed </a></span>
+  <!-- angiver title for HTML siden som visses I browser bar. -->
+  <title> Mohameds Portfolio </title>
+</head>
 
-            <!--Unordered list og dens list items som indhold a tag med hyperlink-->
-            <ul>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="OmMig.html">Om Mig</a></li>
-              <li ><a href="kontakt.html">Kontakt</a></li>
+<body>
 
-            </ul>
-          </nav>
-        </header>
-        <section class="banner2">
-          <div class="content">
-            <h1>Portfolio</h1>
+  <!-- Header defineres her med nav  -->
+  <header>
+    <nav>
+      <!-- Her defineres nav logo, og en checkbox input til at vise og skjule header -->
+      <!-- input defineres med type checkbox, hvis checkbox er tjekket skjules ellers visses den -->
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <span class="logo"><a href="index.html"> Mohamed </a></span>
+
+      <!--Unordered list og dens list items som indhold a tag med hyperlink-->
+      <ul>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="OmMig.html">Om Mig</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <section class="banner2">
+    <div class="content">
+      <h1>Portfolio</h1>
+    </div>
+  </section>
+  <!-- Portfolio -->
+  <section class="portfolio">
+    <h2 class="title2">Projekter</h2>
+    <hr class="hr">
+    <p class="projekttext">Her har lagt nogle af de projekter jeg har lavet gennem tiden.
+      Nogle af disse projekter er lavet i fritiden,
+      og andre er enten skoleprojekter for forbedre mig selv som multimediedesigner.
+      For neden kan man se nogle af de projekter.
+      Klik læs mere for at se de forskellige projekter
+    </p>
+    <div class="wrapper">
+      <div class="card-portfolio">
+        <div class="card-body-portfolio">
+          <div class="imgSize">
+            <img src="/images/klientrapport/klientrapport1.png" alt="prototype of a webpage made in Adobe XD">
           </div>
-        </section>
-        <!-- Portfolio -->
-       <section class="portfolio" >
-          <h2 class="title2" >Projekter</h2>
-            <hr class="hr">
-            <p class="projekttext">Igennem dette semester har jeg lavet nogle forskellige projekter.</br>
-              For neden kan man se nogle af de projekter.
-              Klik på knappen læs mere for at se de forskellige projekter
-              </p>
-             <div class="wrapper">
-               <div class="card-portfolio">
-                 <div class="card-body-portfolio">
-                   <div class="projectImg1">
-                   </div>
-                 </div>
-                 <div>
-                    <a href="projekt1.html" class="btnPortfolio">Læs mere</a>
-                </div>
-               </div>
-               <div class="card-portfolio">
-                 <div class="card-body-portfolio">
-                   <div class="projectImg2">
-                   </div>
-                 </div>
-                 <div>
-                    <a href="projekt2.html" class="btnPortfolio">Læs mere</a>
-                </div>
-               </div>
-               <div class="card-portfolio">
-                 <div class="card-body-portfolio">
-                   <div class="projectImg3">
-                   </div>
-                 </div>
-                 <div>
-                    <a href="projekt3.html" class="btnPortfolio">Læs mere</a>
-                </div>
-               </div>
+        </div>
+        <div>
+          <a href="projekt1.html" class="btnPortfolio">Læs mere</a>
+        </div>
+      </div>
+      <div class="card-portfolio">
+        <div class="card-body-portfolio">
+          <div class="imgSize">
+            <img src="/images/webpagexd/Web2.png" alt="prototype of a webpage made in Adobe XD">
+          </div>
+        </div>
+        <div>
+          <a href="projekt2.html" class="btnPortfolio">Læs mere</a>
+        </div>
+      </div>
+      <div class="card-portfolio">
+        <div class="card-body-portfolio">
+          <div class="projectImg3">
+          </div>
+        </div>
+        <div>
+          <a href="projekt3.html" class="btnPortfolio">Læs mere</a>
+        </div>
+      </div>
 
-             </div>
-             <div class="wrapper">
-               <div class="card-portfolio">
-                 <div class="card-body-portfolio">
-                   <div class="projectImg1">
-                   </div>
-                 </div>
-                 <div>
-                    <a href="projekt4.html" class="btnPortfolio">Læs mere</a>
-                </div>
-               </div>
-               <div class="card-portfolio">
-                 <div class="card-body-portfolio">
-                   <div class="projectImg2">
-                   </div>
-                 </div>
-                 <div>
-                    <a href="projekt5.html" class="btnPortfolio">Læs mere</a>
-                </div>
-               </div>
-               <div class="card-portfolio">
-                 <div class="card-body-portfolio">
-                   <div class="projectImg3">
-                   </div>
-                 </div>
-                 <div>
-                    <a href="projekt6.html" class="btnPortfolio">Læs mere</a>
-                </div>
-               </div>
+    </div>
+    <div class="wrapper">
+      <div class="card-portfolio">
+        <div class="card-body-portfolio">
+          <div class="imgSize">
+        <img src="/images/amdeliverylogo.png" alt="prototype XD">
+          </div>
+        </div>
+        <div>
+          <a href="projekt4.html" class="btnPortfolio">Læs mere</a>
+        </div>
+      </div>
+      <div class="card-portfolio">
+        <div class="card-body-portfolio">
+          <div class="projectImg2">
+          </div>
+        </div>
+        <div>
+          <a href="projekt5.html" class="btnPortfolio">Læs mere</a>
+        </div>
+      </div>
+      <div class="card-portfolio">
+        <div class="card-body-portfolio">
+          <div class="projectImg3">
+          </div>
+        </div>
+        <div>
+          <a href="projekt6.html" class="btnPortfolio">Læs mere</a>
+        </div>
+      </div>
 
-             </div>
-       </section>
+    </div>
+  </section>
 
-       <!-- Kontakt mig section defineres her -->
-       <section class="kontakt">
-          <h2 class="title2 cWhite">Kontakt mig</h2>
-            <hr class="hr">
-            <p class="cWhite txt">For yderligere info så smid endelig en mail! </br>
-               Man er også velkommen til at ringe eller kontakte mig gennem de sociale medier.
-            </p>
-         <div class="wrapper">
-           <div class="card">
-             <div class="card-body">
-                   <i class="fa fa-phone"></i>
-                   <h2>Mobil nr: </h2>
-                   <span> +45 71 87 77 47</span>
-             </div>
-           </div>
-           <div class="card">
-             <div class="card-body">
-                 <i class="fa fa-envelope"></i>
-                 <h2><a href="https://blog.abdisamed.dk/kontakt/" style="color:white;"> Email </a></h2>
-                 <span> Abdisamed@hotmail.dk</span>
-             </div>
-           </div>
+  <!-- Kontakt mig section defineres her -->
+  <section class="kontakt">
+    <h2 class="title2 cWhite">Kontakt mig</h2>
+    <hr class="hr">
+    <p class="cWhite txt">For yderligere info så smid endelig en mail! </br>
+      Man er også velkommen til at ringe eller kontakte mig gennem de sociale medier.
+    </p>
+    <div class="wrapper">
+      <div class="card">
+        <div class="card-body">
+          <i class="fa fa-phone"></i>
+          <h2>Mobil nr: </h2>
+          <span> +45 71 87 77 47</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <i class="fa fa-envelope"></i>
+          <h2><a href="https://blog.abdisamed.dk/kontakt/" style="color:white;"> Email </a></h2>
+          <span> Abdisamed@hotmail.dk</span>
+        </div>
+      </div>
 
-         </div>
-       </section>
+    </div>
+  </section>
 
-       <!-- Footer defineres her -->
-       <footer>
-          <div class="footer-content">
-             <ul class="socials">
-                 <li><a href="https://www.facebook.com/Mohamed.Abdisamed"><i class="fa fa-facebook"></i></a></li>
-                 <li><a href="https://twitter.com/CryptoloverDK"><i class="fa fa-twitter"></i></a></li>
-                 <li><a href="https://dk.linkedin.com/in/mohamed-abdisamed-97496982"><i class="fa fa-linkedin-square"></i></a></li>
-                 <li><a href="https://github.com/MohamedAbdisamed"><i class="fa fa-github"></i></a></li>
-             </ul>
-           </div>
-       </footer>
-    </body>
+  <!-- Footer defineres her -->
+  <footer>
+    <div class="footer-content">
+      <ul class="socials">
+        <li><a href="https://www.facebook.com/Mohamed.Abdisamed"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/CryptoloverDK"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://dk.linkedin.com/in/mohamed-abdisamed-97496982"><i class="fa fa-linkedin-square"></i></a></li>
+        <li><a href="https://github.com/MohamedAbdisamed"><i class="fa fa-github"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>
