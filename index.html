@@ -1,193 +1,198 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="da" xml:lang="da">
-    <head>
-      <!-- charset og encoding for at den kan læse å ø æ -->
-      <meta charset="utf-8" />
-      <!-- Dette giver browseren instruktioner om, hvordan jeg styrer sidens dimensioner og skalering. -->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Social media icons hentes fra fontawesome  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Eksternal css fil kaldes her -->
-        <link rel="stylesheet" href="style.css">
-        <!-- angiver title for HTML siden som visses I browser bar. -->
-        <title> Mohameds Portfolio </title>
-    </head>
-    <body>
-      <!-- Header defineres her med nav  -->
-      <header>
-          <nav>
-            <!-- Her defineres nav logo, og en checkbox input til at vise og skjule header -->
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn" >
-              <i class="fa fa-bars"></i>
-            </label>
-            <span class="logo" ><a href="index.html"> Mohamed </a></span>
-          <!--Unordered list og dens list items -->
-          <ul>
-            <li><a href="portfolio.html" >Portfolio</a></li>
-            <li><a href="OmMig.html">Om Mig</a></li>
-            <li ><a href="kontakt.html">Kontakt</a></li>
+
+<head>
+  <!-- charset og encoding for at den kan læse å ø æ -->
+  <meta charset="utf-8" />
+  <!-- Dette giver browseren instruktioner om, hvordan jeg styrer sidens dimensioner og skalering. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Social media icons hentes fra fontawesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Eksternal css fil kaldes her -->
+  <link rel="stylesheet" href="style.css">
+  <!-- angiver title for HTML siden som visses I browser bar. -->
+  <title> Mohameds Portfolio </title>
+</head>
+
+<body>
+  <!-- Header defineres her med nav  -->
+  <header>
+    <nav>
+      <!-- Her defineres nav logo, og en checkbox input til at vise og skjule header -->
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <span class="logo"><a href="index.html"> Mohamed </a></span>
+      <!--Unordered list og dens list items -->
+      <ul>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="OmMig.html">Om Mig</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
 
 
-          </ul>
-          </nav>
-        </header>
+      </ul>
+    </nav>
+  </header>
 
-          <!-- Banner defineres her -->
-          <section class="banner">
-            <div class="content">
-              <h1>Mohamed Abdisamed</h1>
-              <p> Velkommen til min Portfolio!
-                <br/> Jeg er under uddannelse som multimediedesigner og her på denne side vil i kunne læse og <br/>
-                 se de ting jeg har kendskab og viden til
-              </p>
-              <a href="portfolio.html" class="btn">Portfolio</a>
-            </div>
-          </section>
+  <!-- Banner defineres her -->
+  <section class="banner">
+    <div class="content">
+      <h1>Mohamed Abdisamed</h1>
+      <p> Velkommen til min Portfolio!
+        <br /> Jeg er under uddannelse som multimediedesigner og her på denne side vil i kunne læse og <br />
+        se de ting jeg har lavet som multimediedesigner.
+      </p>
+      <a href="portfolio.html" class="btn">Portfolio</a>
+    </div>
+  </section>
 
-          <!-- Om mig-->
-          <section class="omMig">
-            <div class="contentMig">
-              <h2 class="title"> Lidt om mig </h2>
-              <hr class="hr">
-              <p class="bodyTxt">
-                Mit navn er Mohamed Abdisamed. </br>
-                Jeg er en 33 årig frisk ung mand og er igang med multimediedesigner uddannelsen på University College Lillebælt.</br>
-                Her er jeg igang med mit første semester.</br>
-                Jeg er altid klare på at lærer noget nyt og tage nye udfordringer op. Hvis DU/I er på udkig efter en ny kollega som er en teamplayer,
-                men som også kan arbejde selvstændigt og ikke er bange for at tage ansvar. Så skal i ikke tøve med at kontakte mig!
-              </p>
-              <a href="OmMig.html" class="btn">Læs mere</a>
-            </div>
-            <div class="img-box">
-              <img src="/images/mig.png" alt="Profil billede af mig"  class="coverImg"/>
-            </div>
-          </section>
+  <!-- Om mig-->
+  <section class="omMig">
+    <div class="contentMig">
+      <h2 class="title"> Lidt om mig </h2>
+      <hr class="hr">
+      <p class="bodyTxt">
+        Mit navn er Mohamed Abdisamed. </br>
+        Jeg er en 33 årig frisk ung mand og er igang med multimediedesigner uddannelsen på University College Lillebælt.</br>
+        Her er jeg igang med mit første semester.</br>
+        Jeg er altid klare på at lærer noget nyt og tage nye udfordringer op. Hvis DU/I er på udkig efter en ny kollega som er en teamplayer,
+        men som også kan arbejde selvstændigt og ikke er bange for at tage ansvar. Så skal i ikke tøve med at kontakte mig!
+      </p>
+      <a href="OmMig.html" class="btn">Læs mere</a>
+    </div>
+    <div class="img-box">
+      <img src="/images/mig.png" alt="Profil billede af mig" class="coverImg" />
+    </div>
+  </section>
 
-          <!-- Kompetencer section defineres her -->
-          <section class="kompetencer">
-             <h2 class="title2 cWhite">
-                 Blog
-             </h2>
-               <hr class="hr">
-               <p class="cWhite txt">
-                 Her poster jeg nogle af de opgaver, programmer og store projekter vi kommer igennem under uddannelsen som multimediedesigner.
-               </br>klik for neden for at læse videre i bloggen!
-               </p>
-               <a class="btnBlog" style="color:white" href="https://blog.abdisamed.dk/">
-               Blog
-             </a>
-          </section>
+  <!-- Kompetencer section defineres her -->
+  <section class="kompetencer">
+    <h2 class="title2 cWhite">
+      Blog
+    </h2>
+    <hr class="hr">
+    <p class="cWhite txt">
+      Her poster jeg nogle af de opgaver, programmer og store projekter vi kommer igennem under uddannelsen som multimediedesigner.
+      </br>klik for neden for at læse videre i bloggen!
+    </p>
+    <a class="btnBlog" style="color:white" href="https://blog.abdisamed.dk/">
+      Blog
+    </a>
+  </section>
 
-          <!-- Portfolio -->
-          <section class="portfolio">
-             <h2 class="title2">Projekter</h2>
-               <hr class="hr">
-               <p class="projekttext">Her har lagt nogle af de projekter jeg har lavet gennem tiden.
-                 Nogle af disse projekter er lavet i fritiden,
-                 og andre er enten skoleprojekter for forbedre mig selv som multimediedesigner.
-                 For neden kan man se nogle af de projekter.
-                 Klik læs mere for at se de forskellige projekter
-                 </p>
-                <div class="wrapper">
-                  <div class="card-portfolio">
-                    <div class="card-body-portfolio">
-                      <div class="imgSize">
-                    <img src="/images/klientrapport/klientrapport1.png" alt="prototype XD">
-                      </div>
-                    </div>
-                    <div>
-                       <a href="projekt1.html" class="btnPortfolio">Læs mere</a>
-                   </div>
-                  </div>
-                  <div class="card-portfolio">
-                    <div class="card-body-portfolio">
-                      <div class="imgSize">
-                        <img src="/images/webpagexd/Web2.png" alt="prototype of a webpage made in Adobe XD">
-                      </div>
-                    </div>
-                    <div>
-                       <a href="projekt2.html" class="btnPortfolio">Læs mere</a>
-                   </div>
-                  </div>
-                  <div class="card-portfolio">
-                    <div class="card-body-portfolio">
-                      <div class="projectImg3">
-                      </div>
-                    </div>
-                    <div>
-                       <a href="projekt3.html" class="btnPortfolio">Læs mere</a>
-                   </div>
-                  </div>
-
-                </div>
-                <div class="wrapper">
-                  <div class="card-portfolio">
-                    <div class="card-body-portfolio">
-                      <div class="imgSize">
-                    <img src="/images/amdeliverylogo.png" alt="prototype XD">
-                      </div>
-                    </div>
-                    <div>
-                       <a href="projekt4.html" class="btnPortfolio">Læs mere</a>
-                   </div>
-                  </div>
-                  <div class="card-portfolio">
-                    <div class="card-body-portfolio">
-                      <div class="projectImg2">
-                      </div>
-                    </div>
-                    <div>
-                       <a href="projekt5.html" class="btnPortfolio">Læs mere</a>
-                   </div>
-                  </div>
-                  <div class="card-portfolio">
-                    <div class="card-body-portfolio">
-                      <div class="projectImg3">
-                      </div>
-                    </div>
-                    <div>
-                       <a href="projekt6" class="btnPortfolio">Læs mere</a>
-                   </div>
-                  </div>
-
-                </div>
-          </section>
-        <!-- Kontakt mig section defineres her -->
-        <section class="kontakt">
-           <h2 class="title2 cWhite">Kontakt mig</h2>
-             <hr class="hr">
-             <p class="cWhite txt">For yderligere info så smid endelig en mail! Jeg vender altid tilbage så hurtigt jeg kan.</br> Man er også velkommen til at ringe eller tage kontakt til mig gennem de Sociale medier.
-             </p>
-          <div class="wrapper">
-            <div class="card">
-              <div class="card-body">
-                    <i class="fa fa-phone"></i>
-                    <h2>Mobil nr: </h2>
-                    <span> +45 71 87 77 47</span>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                  <i class="fa fa-envelope"></i>
-                    <h2>Email</h2>
-                    <span> Abdisamed@hotmail.dk</span>
-              </div>
-            </div>
-
+  <!-- Portfolio -->
+  <section class="portfolio">
+    <h2 class="title2">Projekter</h2>
+    <hr class="hr">
+    <p class="projekttext">Her har lagt nogle af de projekter jeg har lavet igennem tiden.
+      Nogle af disse projekter er lavet i fritiden,
+      og andre er enten skoleprojekter for forbedre mig selv som multimediedesigner.
+      For neden kan man se nogle af de projekter.
+      Klik læs mere for at se de forskellige projekter
+    </p>
+    <div class="wrapper">
+      <div class="card-portfolio">
+        <div class="card-body-portfolio">
+          <div class="imgSize">
+            <img src="/images/klientrapport/klientrapport1.png" alt="prototype XD">
           </div>
-        </section>
+        </div>
+        <div>
+          <a href="projekt1.html" class="btnPortfolio">Læs mere</a>
+        </div>
+      </div>
+      <div class="card-portfolio">
+        <div class="card-body-portfolio">
+          <div class="imgSize">
+            <img src="/images/webpagexd/Web2.png" alt="prototype of a webpage made in Adobe XD">
+          </div>
+        </div>
+        <div>
+          <a href="projekt2.html" class="btnPortfolio">Læs mere</a>
+        </div>
+      </div>
+      <div class="card-portfolio">
+        <div class="card-body-portfolio">
+          <div class="projectImg3">
+          </div>
+        </div>
+        <div>
+          <a href="projekt3.html" class="btnPortfolio">Læs mere</a>
+        </div>
+      </div>
 
-        <!-- Footer defineres her -->
-        <footer>
-           <div class="footer-content">
-              <ul class="socials">
-                  <li><a href="https://www.facebook.com/Mohamed.Abdisamed"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://twitter.com/CryptoloverDK"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="https://dk.linkedin.com/in/mohamed-abdisamed-97496982"><i class="fa fa-linkedin-square"></i></a></li>
-                  <li><a href="https://github.com/MohamedAbdisamed"><i class="fa fa-github"></i></a></li>
-              </ul>
-            </div>
-        </footer>
-    </body>
+    </div>
+    <div class="wrapper">
+      <div class="card-portfolio">
+        <div class="card-body-portfolio">
+          <div class="imgSize">
+            <img src="/images/amdeliverylogo.png" alt="prototype XD">
+          </div>
+        </div>
+        <div>
+          <a href="projekt4.html" class="btnPortfolio">Læs mere</a>
+        </div>
+      </div>
+      <div class="card-portfolio">
+        <div class="card-body-portfolio">
+          <div class="imgSize">
+            <img src="/images/vognmand/forside.png" alt="prototype XD">
+          </div>
+        </div>
+        <div>
+          <a href="projekt5.html" class="btnPortfolio">Læs mere</a>
+        </div>
+      </div>
+      <div class="card-portfolio">
+        <div class="card-body-portfolio">
+          <div class="imgSize">
+        <img src="/images/portfolioxd/ommig.xd.png" alt="prototype XD">
+          </div>
+        </div>
+        <div>
+          <a href="projekt6" class="btnPortfolio">Læs mere</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Kontakt mig section defineres her -->
+  <section class="kontakt">
+    <h2 class="title2 cWhite">Kontakt mig</h2>
+    <hr class="hr">
+    <p class="cWhite txt">For yderligere info så smid endelig en mail! Jeg vender altid tilbage så hurtigt jeg kan.</br> Man er også velkommen til at ringe eller tage kontakt til mig gennem de Sociale medier.
+    </p>
+    <div class="wrapper">
+      <div class="card">
+        <div class="card-body">
+          <i class="fa fa-phone"></i>
+          <h2>Mobil nr: </h2>
+          <span> +45 71 87 77 47</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <i class="fa fa-envelope"></i>
+          <h2>Email</h2>
+          <span> Abdisamed@hotmail.dk</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer defineres her -->
+  <footer>
+    <div class="footer-content">
+      <ul class="socials">
+        <li><a href="https://www.facebook.com/Mohamed.Abdisamed"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/CryptoloverDK"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://dk.linkedin.com/in/mohamed-abdisamed-97496982"><i class="fa fa-linkedin-square"></i></a></li>
+        <li><a href="https://github.com/MohamedAbdisamed"><i class="fa fa-github"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>
