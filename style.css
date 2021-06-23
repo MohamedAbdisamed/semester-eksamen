@@ -253,12 +253,12 @@ opacity: 1;
 }
 
 /* Kompetenc section definees her */
-.kompetencer{
+.blog{
   background:linear-gradient(to bottom, transparent -90%, black 100%),
    url(https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=937&q=80);
   background-size:cover;
 }
-.kompetencer .hr{
+.blog .hr{
   border:2px solid #1db096;
   width:100px;
   margin:auto;
@@ -267,7 +267,7 @@ opacity: 1;
 
 }
 
-.kompetencer a:hover{
+.blog a:hover{
   background: black;
   padding: 10px;
   border-radius: 5px;
@@ -374,7 +374,7 @@ opacity: 1;
   border:1px solid grey;
 }
 
-.kompetencer .card:hover{
+.blog .card:hover{
   transform: scale(1.1);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6)
 }
@@ -395,6 +395,10 @@ opacity: 1;
 .section {
   flex: 1; /*grow*/
   margin-left: 30px;
+}
+
+.margintop-100{
+  margin-top:-100px;
 }
 
 .marginTop{
@@ -480,6 +484,9 @@ position: absolute;
   height: auto;
 }
 
+.imgSize img:hover {
+   transform: scale(1.1);
+}
 .imgSize2 img:hover {
    transform: scale(1.1);
 }
@@ -770,5 +777,6 @@ position: absolute;
   .marginTop2{
     margin-top:0px
   }
+
 
 }
